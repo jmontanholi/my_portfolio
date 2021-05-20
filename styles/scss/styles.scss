@@ -225,6 +225,9 @@ $about-me-bg: #212123;
 
 .project-img {
   max-height: 175px;
+  background-color: $about-me-bg;
+  box-shadow: 0 1.91837px 23.0204px rgb(0, 0, 0);
+  border-radius: 3.83673px;
 }
 
 .project-btn {
@@ -515,4 +518,20 @@ $about-me-bg: #212123;
 
 .reference:hover {
   color: $text-color;
+}
+
+.gradient-overlay {
+  position: relative;
+}
+
+.gradient-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 106%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, $link-color, $dark-color );
+  opacity: 0.6;
+  border-radius: 5px;
 }

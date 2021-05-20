@@ -41,6 +41,10 @@
   .rojects-title-div {
     margin-left: 55px;
   }
+
+  .gradient-overlay::after {
+    width: 87%;
+  }
 }
 
 @media (min-width: 424px) {
@@ -79,6 +83,10 @@
 
   .about-me-text-div {
     margin-left: 50px;
+  }
+
+  .gradient-overlay::after {
+    width: 74.5%;
   }
 }
 
@@ -161,6 +169,10 @@
   .line2,
   .line3 {
     height: 300vh;
+  }
+
+  .gradient-overlay::after {
+    width: 93.5%;
   }
 }
 
