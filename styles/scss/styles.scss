@@ -587,37 +587,37 @@ $about-me-bg: #212123;
 }
 
 .project-1-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/webstore.png");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/webstore.png");
   grid-area: project2;
   @include desktop-img;
 }
 
 .project-2-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/jokenpo.PNG");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/jokenpo.png");
   @include desktop-img;
   grid-area: project1;
 }
 
 .project-3-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/sketch.png");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/sketch.png");
   @include desktop-img;
   grid-area: project3;
 }
 
 .project-4-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/tictactoe.png");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/tictactoe.png");
   @include desktop-img;
   grid-area: project4;
 }
 
 .project-5-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/membersonly.png");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/membersonly.png");
   @include desktop-img;
   grid-area: project5;
 }
 
 .project-6-desktop {
-  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/scrapper.png");
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("Assets/images/scrapper.png");
   @include desktop-img;
   grid-area: project6;
 }
