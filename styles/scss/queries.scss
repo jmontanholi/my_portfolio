@@ -1,3 +1,8 @@
+$text-color:#fff;
+$link-color: #db4747;
+$dark-color: #1b1b1e;
+$about-me-bg: #212123;
+
 @mixin flex-column-center {
   display: flex;
   flex-direction: column;
@@ -188,6 +193,83 @@
   .menu-btn {
     left: 960px;
   }
+
+  .myself {
+    font-size: 25px;
+    line-height: 25px;
+    width: 500px;
+    text-align: justify;
+  }
+
+  .about-me-sections {
+    grid-template-columns: 220px 220px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "ab1 ab2"
+      "ab3 ab4"
+    ;
+  }
+
+  .about-me-section {
+    height: 250px;
+    width: 200px;
+  }
+
+  .about-me-1 {
+    grid-area: ab1;
+  }
+
+  .about-me-2 {
+    grid-area: ab2;
+  }
+
+  .about-me-3 {
+    grid-area: ab3;
+  }
+
+  .about-me-4 {
+    grid-area: ab4;
+  }
+
+  .about-me-text-div {
+    width: 400px;
+    margin-left: 50px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer-icons {
+    width: 400px;
+  }
+
+  .footer-download {
+    width: 145px;
+  }
+
+  .footer-line {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .contact-margin {
+    margin-left: 35px;
+  }
+
+  .contact-ul {
+    display: flex;
+    width: 300px;
+    margin: 0;
+  }
+
+  .contact-li {
+    background: rgba(0, 0, 0, 0.24);
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+  }
 }
 
 @media (min-width: 1439px) {
@@ -201,6 +283,22 @@
 
   .menu-btn {
     left: 1380px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    height: 200vh;
+  }
+
+  .projects-desktop {
+    height: 1200px;
+    grid-template-columns: repeat(8, calc(1000/8));
+    grid-template-rows: repeat(8, calc(1000/8));
+  }
+
+  .projects-section-desktop {
+    height: 1450px;
   }
 }
 
@@ -218,6 +316,30 @@
   }
 
   .myself {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .about-me-li {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .about-me-ul {
+    margin-left: 10px;
+  }
+
+  .about-me-section {
+    height: 350px;
+    width: 300px;
+  }
+
+  .about-me-sections {
+    grid-template-columns: 380px 380px;
+    grid-template-rows: auto;
+  }
+
+  .sub-text {
     font-size: 15px;
   }
 }

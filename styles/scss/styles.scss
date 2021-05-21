@@ -31,6 +31,14 @@ $about-me-bg: #212123;
   background-color: $dark-color;
 }
 
+@mixin desktop-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1.91837px 23.0204px rgb(0, 0, 0);
+  border-radius: 3.83673px;
+}
+
 // @mixin about-me-icons {
 //     width: 20px;
 //     height: 20px;
@@ -140,9 +148,7 @@ $about-me-bg: #212123;
 
 .myself {
   color: $text-color;
-
   @include font-1;
-
   font-size: 12px;
   line-height: 18px;
   text-align: left;
@@ -237,7 +243,7 @@ $about-me-bg: #212123;
   transition: all 1s ease;
   max-width: 160px;
   margin-top: 10px;
-  background: #db4747;
+  background: $link-color;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   margin-left: 20%;
@@ -347,6 +353,7 @@ $about-me-bg: #212123;
   color: $link-color;
   text-decoration: none;
   transition: all 1s ease;
+  text-align: center;
 }
 
 .modal-link:hover {
@@ -463,6 +470,10 @@ $about-me-bg: #212123;
   color: $text-color;
 }
 
+.footer {
+  flex-direction: column;
+}
+
 .footer-line {
   width: 288px;
   height: 0;
@@ -520,18 +531,177 @@ $about-me-bg: #212123;
   color: $text-color;
 }
 
-.gradient-overlay {
-  position: relative;
+// DESKTOP
+.projects-section-desktop {
+  display: flex;
+  flex-direction: column;
+  height: 1050px;
 }
 
-.gradient-overlay::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0px;
-  width: 106%;
-  height: 100%;
-  background-image: linear-gradient(to bottom right, $link-color, $dark-color );
-  opacity: 0.6;
-  border-radius: 5px;
+.projects-desktop {
+  display: grid;
+  height: 800px;
+  grid-template-columns: repeat(8, calc(800/8));
+  grid-template-rows: repeat(8, calc(800/8));
+  grid-template-areas: 
+    "project1 project1 project1 project2 project2 project2 project2 project2"
+    "project1 project1 project1 project2 project2 project2 project2 project2"
+    "project3 project3 project3 project2 project2 project2 project2 project2"
+    "project3 project3 project3 project2 project2 project2 project2 project2"
+    "project4 project4 project4 project4 project4 project5 project5 project5"
+    "project4 project4 project4 project4 project4 project5 project5 project5"
+    "project4 project4 project4 project4 project4 project6 project6 project6"
+    "project4 project4 project4 project4 project4 project6 project6 project6"
+  ;
+}
+
+.languages-ul-desktop {
+  list-style-type: none;
+}
+
+.languages-desktop {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: $text-color;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 80%;
+}
+
+.languages-desktop:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+.project-title-desktop {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 80%;
+  color: $text-color;
+}
+
+.project-1-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/webstore.png");
+  grid-area: project2;
+  @include desktop-img;
+}
+
+.project-2-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/jokenpo.PNG");
+  @include desktop-img;
+  grid-area: project1;
+}
+
+.project-3-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/sketch.png");
+  @include desktop-img;
+  grid-area: project3;
+}
+
+.project-4-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/tictactoe.png");
+  @include desktop-img;
+  grid-area: project4;
+}
+
+.project-5-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/membersonly.png");
+  @include desktop-img;
+  grid-area: project5;
+}
+
+.project-6-desktop {
+  background: radial-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/Assets/images/scrapper.png");
+  @include desktop-img;
+  grid-area: project6;
+}
+
+.project-btn-desktop {
+  text-decoration: none;
+  text-align: center;
+  transition: all 1s ease;
+  max-width: 160px;
+  margin-top: 10px;
+  background: $link-color;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: $text-color;
+}
+
+.project-btn-desktop:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background: $link-color;
+  box-shadow: 0 2px 15px rgba(219, 71, 71, 0.6);
+  border-radius: 4px;
+}
+
+.project-btn-desktop:active {
+  background: $link-color;
+  box-shadow: inset 0 0 2px #5c1e1e, inset 0 0 10px #571c1c;
+  border-radius: 4px;
+}
+
+#modal-1-desktop {
+  @include modal;
+}
+
+#modal-2-desktop {
+  @include modal;
+}
+
+#modal-3-desktop {
+  @include modal;
+}
+
+#modal-4-desktop {
+  @include modal;
+}
+
+#modal-5-desktop {
+  @include modal;
+}
+
+#modal-6-desktop {
+  @include modal;
+}
+
+.close-desktop {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-desktop:hover,
+.close-desktop:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-languages-div-desktop {
+  margin: 15px;
+  text-align: center;
+}
+
+.project-modal-btn-desktop {
+  align-self: center;
+  width: 200px;
+}
+
+.project-img-desktop {
+  max-height: 300px;
+  background-color: $about-me-bg;
+  box-shadow: 0 1.91837px 23.0204px rgb(0, 0, 0);
+  border-radius: 3.83673px;
+}
+
+.modal-text-desktop {
+  color: $text-color;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align:center;
 }

@@ -85,3 +85,77 @@ menuClose.onclick = function() {
     menuClose.style.display = "none"
     menuBtn.style.display = "block";
 }
+
+// DESKTOP
+
+var modal1Desktop = document.getElementById("modal-1-desktop")
+var projectBtn1Desktop = document.getElementById("project-btn-1-desktop");
+var close1Desktop = document.getElementsByClassName("close-desktop")[0]
+
+projectBtn1Desktop.onclick = function() {
+    modal1Desktop.style.display = "inline";
+}
+
+close1Desktop.onclick = function() {
+    modal1Desktop.style.display = "none";
+}
+
+var modal2Desktop = document.getElementById("modal-2-desktop")
+var projectBtn2Desktop = document.getElementById("project-btn-2-desktop");
+var close2Desktop = document.getElementsByClassName("close-desktop")[1]
+
+projectBtn2Desktop.onclick = function() {
+    modal2Desktop.style.display = "inline";
+}
+
+close2Desktop.onclick = function() {
+    modal2Desktop.style.display = "none";
+}
+
+var modal3Desktop = document.getElementById("modal-3-desktop")
+var projectBtn3Desktop = document.getElementById("project-btn-3-desktop");
+var close3Desktop = document.getElementsByClassName("close-desktop")[2]
+
+projectBtn3Desktop.onclick = function() {
+    modal3Desktop.style.display = "inline";
+}
+
+close3Desktop.onclick = function() {
+    modal3Desktop.style.display = "none";
+}
+
+var modal4Desktop = document.getElementById("modal-4-desktop")
+var projectBtn4Desktop = document.getElementById("project-btn-4-desktop");
+var close4Desktop = document.getElementsByClassName("close-desktop")[3]
+
+projectBtn4Desktop.onclick = function() {
+    modal4Desktop.style.display = "inline";
+}
+
+close4Desktop.onclick = function() {
+    modal4Desktop.style.display = "none";
+}
+
+var modal5Desktop = document.getElementById("modal-5-desktop")
+var projectBtn5Desktop = document.getElementById("project-btn-5-desktop");
+var close5Desktop = document.getElementsByClassName("close-desktop")[4]
+
+projectBtn5Desktop.onclick = function() {
+    modal5Desktop.style.display = "inline";
+}
+
+close5Desktop.onclick = function() {
+    modal5Desktop.style.display = "none";
+}
+
+var modal6Desktop = document.getElementById("modal-6-desktop")
+var projectBtn6Desktop = document.getElementById("project-btn-6-desktop");
+var close6Desktop = document.getElementsByClassName("close-desktop")[5]
+
+projectBtn6Desktop.onclick = function() {
+    modal6Desktop.style.display = "inline";
+}
+
+close6Desktop.onclick = function() {
+    modal6Desktop.style.display = "none";
+}
