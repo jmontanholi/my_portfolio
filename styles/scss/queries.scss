@@ -116,7 +116,11 @@ $about-me-bg: #212123;
   }
 
   .myself {
-    width: 250px;
+    font-size: 25px;
+    line-height: 25px;
+    width: 500px;
+    text-align: justify;
+    margin-left: 20px;
   }
 
   .social-icons {
@@ -173,11 +177,17 @@ $about-me-bg: #212123;
   .line1,
   .line2,
   .line3 {
-    height: 300vh;
+    height: 200vh;
   }
 
-  .gradient-overlay::after {
-    width: 93.5%;
+  .about-me-sections {
+    margin-left: 35px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "ab1 ab2"
+      "ab3 ab4"
+    ;
   }
 }
 
@@ -229,6 +239,10 @@ $about-me-bg: #212123;
 
   .about-me-4 {
     grid-area: ab4;
+  }
+
+  .about-me-div {
+    flex-direction: row;
   }
 
   .about-me-text-div {

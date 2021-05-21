@@ -61,7 +61,7 @@ $about-me-bg: #212123;
 
 @mixin lines {
   width: 1px;
-  height: 460vh;
+  height: 320vh;
   position: absolute;
   top: 0;
   opacity: 0.05;
@@ -405,6 +405,11 @@ $about-me-bg: #212123;
   background: #db474734;
 }
 
+
+.about-me-div {
+  flex-direction: column;
+}
+
 .about-me-section {
   background-color: $about-me-bg;
   box-shadow: 0 1.91837px 23.0204px rgba(0, 0, 0, 0.25);
@@ -415,9 +420,7 @@ $about-me-bg: #212123;
 
 .about-me-section-titles {
   color: $text-color;
-
   @include font-1;
-
   font-size: 20px;
   font-weight: bold;
   line-height: 18px;
