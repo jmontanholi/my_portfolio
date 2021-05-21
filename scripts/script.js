@@ -75,7 +75,7 @@ var dropdown = document.getElementById("dropdown");
 var menuClose = document.getElementById("menu-close")
 
 menuBtn.onclick = function() {
-    dropdown.style.display = "block";
+    dropdown.style.display = "flex";
     menuClose.style.display = "block";
     menuBtn.style.display = "none";
 }
